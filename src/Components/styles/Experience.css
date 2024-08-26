@@ -1,0 +1,40 @@
+#Experience{
+    height: var(--h);
+    width: 100%;
+    background-color: var(--Secondary);
+    /* background: url("../../assets/Circuit Primary.svg") center/cover no-repeat ; */
+
+}
+.Experience-container{
+    width: 85%;
+    margin: 0px auto;
+    padding: 100px 0px;
+}
+.Experience-title{
+    text-align: center;
+    padding-bottom: 50px;
+}
+.Experience-title h1{
+    font-size: 25px;
+}
+.Experience-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+.Experience_cards{
+    border-top: 4px solid var(--theme);
+    border-bottom: 4px solid var(--theme);
+    /* margin-bottom: 10px; */
+    width: 100%;
+    padding: 20px;
+}
+.Experience_card-title{
+    margin-bottom: 10px;
+}
+.Experience_card-years{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

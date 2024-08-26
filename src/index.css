@@ -1,0 +1,78 @@
+:root {
+  --theme: #66BB6A;
+  /* --theme: yellow; */
+  /* --theme:#e7b323; */
+  --white: #fff;
+  --dark: #0d0d0d;
+  --grey: #424242;
+  --yellow: yellow;
+  --blue: #007aff;
+  --sectionbg: #191970;
+  --secondary-color: #2c2c80;
+  --text-color: #b0aac0;
+  --meta-text-color: #9b9db1;
+  --e-global-color-secondary: #54595f;
+  --banner: #002233;
+  --h: 100vh;
+  --secondary1:#03254E;
+  --primary:#011C27;
+  --Secondary:#4A6572;
+  --Danger:#E53935 ;
+  --Info:#29B6F6;
+  --Success:#66BB6A;
+  --Warning:#FFA726 ;
+  --Light:#F5F5F5 ;
+  --Dark:#002B36 ;
+  --color:#29a587;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+
+.download,
+.hire_me {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.hire_me {
+  border: 3px solid var(--theme);
+  border-radius: 10px;
+  background-color: var(--theme);
+  transition: .5s;
+}
+
+.hire_me:hover {
+  border-radius: 10px;
+  border: 3px solid var(--theme);
+  background-color: var(--dark);
+  color: var(--theme);
+}
+
+.download {
+  border-radius: 10px;
+  border: 3px solid var(--theme);
+  background-color: var(--dark);
+  color: var(--theme);
+  transition: .5s;
+
+}
+
+.download:hover {
+  border: 3px solid var(--theme);
+  border-radius: 10px;
+  background-color: var(--theme);
+  color: var(--dark);
+  transition: .5s;
+}

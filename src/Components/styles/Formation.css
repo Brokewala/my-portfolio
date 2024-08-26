@@ -1,0 +1,56 @@
+#Formation{
+    height: var(--h);
+    width: 100%;
+    /* background-color:var(--color); */
+    /* background: url("../../assets/Circuit Primary.svg") center/cover no-repeat ; */
+    background: linear-gradient(to right, var(--theme) 20%, var(--Dark) 20%);
+    /* background: linear-gradient(to right, var(--theme) 20%, transparent 20%), url('../../assets/Circuit Primary.svg'); */
+    background-size: cover;
+    
+}
+.Formation-container{
+    height: var(--h);
+    width: 85%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.Formation-title h1{
+    margin-bottom: 10px;
+}
+.formation_line{
+    width: 200px;
+    height: 5px;
+    background-color: var(--Success);
+}
+.Formation-content{
+    margin-top: 20px;
+}
+.Formation-cards{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+.Formation-footer{
+    margin-top: 50px;
+}
+.Formation-right{
+    /* background-color: #ff0000a8; */
+    display: flex;
+    align-items: center;
+    /* background: url("../../assets/abstract-colorful-mesh-dark-background.png") center/cover no-repeat; */
+    height: 100%;
+    width: 100%;
+}
+.Formation-right img{
+    border: 20px solid var(--Success);
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.Formation-card-left h1{
+    color: var(--theme);
+}

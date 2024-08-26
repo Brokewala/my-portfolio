@@ -1,0 +1,9 @@
+#Skills{
+    height: var(--h);
+    width: 100%;
+    background: linear-gradient(to right, var(--theme) 20%, var(--sectionbg) 20%);
+}
+.skill-container{
+    width: 85%;
+    margin: 0px auto;
+}

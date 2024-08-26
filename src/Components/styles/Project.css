@@ -1,0 +1,33 @@
+#Project{
+    height: var(--h);
+    width: 100%;
+    background-color: var(--secondary1);
+}
+.project-container{
+    width: 85%;
+    margin: 0px auto;
+}
+.project-tilte{
+    padding: 50px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    align-items: center;
+    gap: 60px;
+}
+.project-line{
+    background-color: var(--theme);
+    height: 5px;
+}
+.project-content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.project-cards{
+    border: 2px solid red;
+    width: 310px;
+}
+.project-card-img img{
+ width: 300px;
+ object-fit: cover;
+}
