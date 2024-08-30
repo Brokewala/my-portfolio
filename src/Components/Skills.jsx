@@ -1,6 +1,5 @@
 import React from 'react'
 import "./styles/Skills.css"
-import { motion } from "framer-motion"
 
 // frontend
 import css from '../assets/icons8-css3-96.png'
@@ -10,6 +9,8 @@ import react from '../assets/react.svg';
 import django from '../assets/icons8-django-150.png';
 import nodejs from '../assets/icons8-nodejs-96.png';
 import python from '../assets/icons8-python-96.png';
+import php from '../assets/php.png';
+import js from '../assets/js.png';
 // base de donne
 import mongodb from '../assets/icons8-mongodb-96.png';
 import postgres from '../assets/icons8-postgresql-96.png';
@@ -23,53 +24,50 @@ import k8s from '../assets/icons8-kubernetes-96.png';
 import Github from '../assets/icons8-github-50.png'
 import gitlab from '../assets/icons8-gitlab-144.png';
 
+const Cards= ({img,name})=>(
+  <div className='skills-cards'>
+    <div className="skills-card-img">
+      <img src={img} alt={name} />
+    </div>
+    <div className="skills-card-content">
+      <h4>{name}</h4>
+    </div>
+  </div>
+)
+
 export default function Skills() {
   return (
     <div id='Skills'>
       <div className="skill-container">
         <div className="skill-content">
           <div className="skill-title">
-            <motion.div
-              initial={{ x: "100%" }}
-              animate={{ x: "calc(100vw - 50%)" }}
-            >
-              <h1>hello</h1>
-            </motion.div>
-            <h1>Skills</h1>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est nam quidem voluptatibus, deserunt asperiores ut quia dolorem dolore saepe amet, distinctio, id porro maxime officia sint explicabo fuga libero recusandae?
-            </p>
+            <h1>MySkills</h1>
+    
           </div>
-          <div className="skill-frontend">
-            <h1>frontend</h1>
-            <img src={css} alt="css" />
-            <img src={html} alt="gitlab" />
-            <img src={react} alt="gitlab" />
+          <div className="skill-all">
+            {/* backend */}
+            <Cards img={django} name={"django"} />
+            <Cards img={nodejs} name={"nodejs"} />
+            <Cards img={python} name={"python"} />
+            <Cards img={php} name={"PHP"} />
+            {/* frontend */}
+            <Cards img={js} name={"Javascript"} />
+            <Cards img={css} name={"Css"} />
+            <Cards img={html} name={"html"} />
+            <Cards img={react} name={"react"} />
+            {/* base de donne */}
+            <Cards img={mongodb} name={"mongodb"} />
+            <Cards img={postgres} name={"postgres"} />
+            <Cards img={mysql} name={"mysql"} />
+            <Cards img={docker} name={"docker"} />
+            {/*  */}
+            <Cards img={git} name={"git"} />
+            <Cards img={Github} name={"Github"} />
+            <Cards img={gitlab} name={"gitlab"} />
+            <Cards img={k8s} name={"k8s"} />
+            {/* <Cards img={ansible} name={"ansible"} /> */}
+          </div>
 
-          </div>
-          <div className="skill-backend">
-            <h1>backend</h1>
-            <img src={django} alt="django" />
-            <img src={nodejs} alt="django" />
-            <img src={python} alt="django" />
-
-          </div>
-          <div className="skill-db">
-            <h1>Base de donne</h1>
-            <img src={mysql} alt="mysql" />
-            <img src={postgres} alt="postgres" />
-            <img src={mongodb} alt="mongodb" />
-
-          </div>
-          <div className="skill-backend">
-            <h1>devops</h1>
-            <img src={gitlab} alt="gitlab" />
-            <img src={docker} alt="docker" />
-            <img src={git} alt="git" />
-            <img src={Github} alt="Github" />
-            <img src={ansible} alt="ansible" />
-            <img src={k8s} alt="k8s" />
-          </div>
 
         </div>
       </div>

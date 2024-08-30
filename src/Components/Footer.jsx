@@ -12,9 +12,7 @@ export default function Footer() {
       <div className='Footer-container' >
         <div className='Footer-left'>
           <div className='Footer-left-blog1'>
-            <a to="/">
-              <span className="logo">Zara sr</span>
-            </a>
+            
           </div>
           <div className='Footer-left-blog3'>
             <div className='Footer-left-blog3-contact'>

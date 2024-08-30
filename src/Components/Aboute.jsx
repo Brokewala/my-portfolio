@@ -19,6 +19,11 @@ export default function Aboute() {
             <div className="about-line"></div>
           </div>
           <div className="about-desc">
+            <p>
+            I come from sambava.I am a serious person and I appreciate learning. The more I integrate the world of computer development, the more my passion for it increases.
+
+Professional, dynamic and creative, I am always dedicated to my work and able to work in various environments. 
+            </p>
 
             <p>
               Je m'appelle JACQUES Jean Lodphin, développeur web passionné avec une forte expertise dans le développement backend et DevOps. Professionnel, dynamique et créatif, je suis engagé dans chaque projet que j'entreprends, avec une capacité à m'adapter à différents environnements de travail.
