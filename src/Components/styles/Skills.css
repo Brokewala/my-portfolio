@@ -1,15 +1,22 @@
 #Skills{
     min-height: var(--h);
     width: 100%;
-    background: linear-gradient(to right, var(--color) 20%, var(--sectionbg) 20%);
+    /* background: #011C27; */
+    /* background: #011C27; */
+    background-color: #181622; /* La couleur de fond par défaut */
+    background-image: url("../../assets/wave4.svg"); /* L'image de fond */
+    background-position: center; /* Positionne l'image au centre */
+    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la bannière */
+    background-repeat: no-repeat;
 }
 .skill-container{
     width: 85%;
     margin: 0px auto;
+    padding-top: 70px;
 }
 .skill-title{
     
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 .skill-title h1{
     text-align: center;
@@ -24,11 +31,13 @@
     gap: 25px;
 }
 .skills-cards{
-    background-color: #4a6572e4;
+    background-color: #2e2e2ed4;
     overflow: hidden;
-    flex: 1 1 calc(25% - 20px);    border-radius: 8px;
+    flex: 1 1 calc(15% - 20px);    
+    border-radius: 8px;
     transition: .4s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 12px;
 }
 .skills-cards:hover{
     background-color: var(--theme);
@@ -37,8 +46,8 @@
     text-align: center;
 }
 .skills-card-img img{
-    width: 150px;
-    height: 150px;
+    width: 75px;
+    height: 75px;
 }
 .skills-card-content{
     text-align: center;

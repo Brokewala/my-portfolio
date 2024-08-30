@@ -11,27 +11,46 @@ import project2 from "../assets/Capture d’écran du 2024-08-25 13-59-04.png"
 import project3 from "../assets/Capture d’écran du 2024-08-25 13-59-19.png"
 
 
-const ProjectData=[
+const ProjectData = [
   {
-      img:"../assets/Capture d’écran du 2024-08-25 13-58-47.png",
+    img: "/src/assets/Capture d’écran du 2024-08-25 13-58-47.png",
+    title: "Capture",
+    link: "https://lodphin24.netlify.app/"
+
   },
   {
-    img:"../assets/Capture d’écran du 2024-08-25 13-59-04.png",
-},
-{
-  img:"../assets/Capture d’écran du 2024-08-25 13-59-19.png",
-},
+    img: "/src/assets/Capture d’écran du 2024-08-25 13-59-04.png",
+    title: "Capture",
+    link: "https://lodphin24.netlify.app/"
+  },
+  {
+    img: "/src/assets/Capture d’écran du 2024-08-25 13-59-19.png",
+    title: "Capture",
+    link: "https://lodphin24.netlify.app/"
+  },
+  {
+    img: "/src/assets/Capture d’écran du 2024-08-25 13-58-13.png",
+    title: "Capture",
+    link: "https://lodphin24.netlify.app/"
+  },
+  {
+    img: "/src/assets/Capture d’écran du 2024-08-25 13-57-33.png",
+    title: "Capture",
+    link: "https://lodphin24.netlify.app/"
+  },
 ]
 
-const Cards = ({ img }) => (
+const Cards = ({ img, title, link }) => (
   <div className='project-cards'>
     <div className="project-card-img">
-      <img src="../assets/abstract-colorful-mesh-dark-background.png" alt="project1" />
+      <img src={img} alt="project1" />
     </div>
     <div className="project-card-content">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus unde illo, itaque debitis libero alias magni. Quas nihil, cum, veritatis fugit odio totam maiores repellat officia molestias aperiam consectetur dolorum.
-      </p>
+      <h4>{title}</h4>
+      <a href={link} target='__blanks' >
+        <button>Discover</button>
+        <img src="/src/assets/icons8-droite-24.png" alt={title} />
+      </a>
     </div>
   </div>
 )
@@ -47,7 +66,7 @@ export default function Project() {
         <div className="project-content">
           <Swiper
             modules={[Autoplay]}
-            spaceBetween={20}
+            spaceBetween={25}
             centeredSlides={true}
             autoplay={{
               delay: 2500,
@@ -76,8 +95,8 @@ export default function Project() {
           >
             {
               ProjectData.map((data, index) => (
-                <SwiperSlide key={index} className="slide_img ">
-                  <Cards img={data.img} />
+                <SwiperSlide key={index} >
+                  <Cards img={data.img} title={data.title} link={data.link} />
                 </SwiperSlide>
               ))
             }
