@@ -1,10 +1,10 @@
 #Formation{
     height: var(--h);
     width: 100%;
-    background-color: var(--bg); 
-    background-image: url("../../assets/wave4.svg"); /* L'image de fond */
-    background-position: center; /* Positionne l'image au centre */
-    background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la bannière */
+    background-color: var(--bg1); 
+    /* background-image: url("../../assets/wave4.svg"); */
+    background-position: center;
+    background-size: cover; 
     background-repeat: no-repeat;
    background-size: cover;
     
@@ -19,6 +19,7 @@
 }
 .Formation-title h1{
     margin-bottom: 10px;
+    color: white;
 }
 .formation_line{
     width: 200px;

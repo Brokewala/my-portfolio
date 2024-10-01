@@ -1,7 +1,9 @@
 import React from 'react';
-import "./styles/Banner.css"
-import lod from "../assets/Shooting studio  (5).jpg"
+import "./styles/Banner.scss"
+import lod from "../assets/me1.png"
 import { motion } from "framer-motion"
+
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Banner() {
   return (
@@ -9,9 +11,15 @@ export default function Banner() {
       <div className='banner-container'>
         <div className='banner-left'>
           <div className="banner-left-content">
-            <h1>
-              Hello i'm Lodphin
-            </h1>
+            <div className="banner-title">
+
+              <h1>
+                Hello<span>.</span>
+              </h1>
+              <h3>
+                i' am Lodphin
+              </h3>
+            </div>
 
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur aut, debitis nemo iste a esse velit ad, praesentium dolores provident porro reiciendis recusandae fugit. Eos sed facilis illum delectus itaque!
@@ -23,15 +31,13 @@ export default function Banner() {
                 onHoverStart={e => { }}
                 onHoverEnd={e => { }}
               >
-                <button className='hire_me'>Hire me</button>
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.2 }}
-                onHoverStart={e => { }}
-                onHoverEnd={e => { }}
-              >
+                <a href='#' className='download_cv'>
+                  <MdOutlineFileDownload />
+                  <span>
 
-                <button className='download'>Download cv</button>
+                  Download cv
+                  </span>
+                  </a>
               </motion.a>
             </div>
           </div>

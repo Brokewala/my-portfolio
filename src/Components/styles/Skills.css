@@ -1,7 +1,7 @@
 #Skills{
     min-height: var(--h);
     width: 100%;
-    background-color: var(--bg); 
+    background-color: var(--bg2); 
     /* background-color: #3311db;  */
 
 }
@@ -17,6 +17,7 @@
 .skill-title h1{
     text-align: center;
     font-size: 35px;
+    color: white;
 }
 .skill-all{
     margin-top: 50px;
@@ -27,7 +28,7 @@
     gap: 25px;
 }
 .skills-cards{
-    background-color: #2e2e2ed4;
+    background-color: #212121;
     overflow: hidden;
     flex: 1 1 calc(15% - 20px);    
     border-radius: 8px;

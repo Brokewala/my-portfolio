@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import "./styles/Header.css"
+import "./styles/Header.scss"
 import Github from '../assets/icons8-github-50.png'
 
 export default function Header() {

@@ -7,6 +7,7 @@ import Footer from './Components/Footer.jsx';
 import Formation from './Components/Formation.jsx';
 import Header from './Components/Header.jsx';
 import Project from './Components/Project.jsx';
+import Service from './Components/Service.jsx';
 import Skills from './Components/Skills.jsx';
 
 
@@ -18,18 +19,21 @@ function App() {
       <Header />
       {/* banner */}
       <Banner />
-      {/* aboute */}
+      {/* about */}
       <Aboute />
-      {/* experience */}
-      <Experience/>
+      {/* skills */}
+      <Service />
       {/* formation */}
-      <Formation/>
-      {/* project */}
-      <Project/>
-      {/* skill */}
-      <Skills/>
+      <Formation />
       {/* footer */}
-      <Footer/>
+      <Skills />
+      {/* experience */}
+      <Experience />
+      {/* project */}
+      <Project />
+      {/* service */}
+      <Footer />
+
     </>
   )
 }

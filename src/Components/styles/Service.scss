@@ -1,6 +1,84 @@
-#Service{
-    .Service-container{
-        .Service-title{}
-        .Service-content{}
+#Service {
+    width: 100%;
+    height: var(--h);
+    background-color: var(--bg2);
+
+    .Service-container {
+        width: 85%;
+        margin: 0px auto;
+        padding-top: 70px;
+
+        .Service-title {
+            text-align: center;
+
+            h5 {
+                color: #7c838e;
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin: 0 0 15px;
+                position: relative;
+                display: inline-block;
+            }
+
+            h3 {
+                font-size: 46px;
+                text-transform: none;
+                font-weight: 700;
+                position: relative;
+                color: #fff;
+                margin-top: 20px;
+                text-transform: uppercase;
+
+            }
+
+        }
+
+        .ServicesContainer {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+            padding: 40px;
+
+
+            .ServiceCardItem {
+                background-color: var(--card);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.4s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+                    background-color: var(--theme);
+                    p{
+                        color: white !important;
+
+                    }
+                }
+
+                h3 {
+                    margin-top: 15px;
+                    color: #fff;
+                }
+
+                p {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    color: #7c838e;
+                    line-height: 28px;
+                    transition: .5s;
+                }
+
+                .IconWrapper {
+                    font-size: 3rem;
+                    color: #007bff;
+                    margin-bottom: 10px;
+                }
+            }
+        }
     }
 }

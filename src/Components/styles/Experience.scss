@@ -1,0 +1,66 @@
+#Experience {
+    min-height: var(--h);
+    width: 100%;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #101010;
+ 
+    .Experience-container {
+        width: 85%;
+        margin: 0px auto;
+
+        .Experience-title {
+            text-align: center;
+            padding-bottom: 50px;
+
+            h1 {
+                font-size: 25px;
+                color: white;
+            }
+        }
+
+        .Experience-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            .Experience_cards {
+                border-top: 4px solid var(--theme);
+                border-bottom: 4px solid var(--theme);
+                width: 100%;
+                padding: 20px;
+                background-color: #212121;
+
+
+
+                .Experience_card-title {
+                    margin-bottom: 10px;
+
+                    h3 {
+                        font-size: 22px;
+                        color: #fff;
+                        font-family: 'Montserrat', sans-serif;
+                        text-transform: capitalize;
+                        text-align: left;
+                    }
+                }
+
+                .Experience_card-years {
+                    margin-bottom: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .Experience_card-years-right,
+                    .Experience_card-years-left {
+                        color: var(--theme);
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 400;
+                        margin-bottom: 20px;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react'
-import "./styles/Aboute.css"
+import "./styles/Aboute.scss"
 import myimg from "../assets/Shooting studio  (8).jpg"
+import { MdOutlineFileDownload } from "react-icons/md";
 
 export default function Aboute() {
   return (
@@ -20,28 +21,43 @@ export default function Aboute() {
           </div>
           <div className="about-desc">
             <p>
-            I come from sambava.I am a serious person and I appreciate learning. The more I integrate the world of computer development, the more my passion for it increases.
+              I come from sambava. I am a serious person and I appreciate learning. The more I integrate the world of computer development, the more my passion for it increases.
 
-Professional, dynamic and creative, I am always dedicated to my work and able to work in various environments. 
+              Professional, dynamic and creative, I am always dedicated to my work and able to work in various environments.
             </p>
 
-            <p>
-              Je m'appelle JACQUES Jean Lodphin, développeur web passionné avec une forte expertise dans le développement backend et DevOps. Professionnel, dynamique et créatif, je suis engagé dans chaque projet que j'entreprends, avec une capacité à m'adapter à différents environnements de travail.
-            </p>
-            <p>
-              Mon parcours académique, complété par un Diplôme de technicien supérieur, m'a permis de maîtriser diverses technologies telles que React, Django, GitLab CI/CD, Kubernetes et Google Cloud. J'ai eu l'opportunité de travailler sur des projets variés, allant de la création de plateformes communautaires comme Steedy à la gestion de projets e-commerce et comptables.
-            </p>
-            <p>
-              En tant que responsable backend et DevOps, j'ai mis en place des infrastructures robustes, déployé des microservices sur Google Kubernetes Engine, et assuré un développement continu grâce à des pipelines CI/CD efficaces. Ma polyvalence me permet également d'assumer des rôles de chef de projet, où j'ai dirigé des équipes pour livrer des solutions de haute qualité.
-            </p>
+
             <p>
               Je suis constamment à la recherche de nouveaux défis pour affiner mes compétences et contribuer à des projets innovants.
             </p>
 
           </div>
+          <div className="aboute-cards">
+            <div className="aboute-card">
+              <h2>Name</h2>
+              <p>JACQUES Jean Lodphin</p>
+            </div>
+            <div className="aboute-card">
+              <h2>Email</h2>
+              <p>brokewala@gmail.com</p>
+            </div>
+            <div className="aboute-card">
+              <h2>Address</h2>
+              <p>Lot IIf33INH ANDRAISORO Antananarivo 101 Madagascar</p>
+            </div>
+            <div className="aboute-card">
+              <h2>Phone </h2>
+              <p>+261 32 22 129 16 ou +261 34 78 423 54</p>
+            </div>
+          </div>
           <div className="about-btns">
-            <button className='hire_me'>Hire me</button>
-            <button className='download'>Download cv</button>
+          <a href='#' className='download_cv'>
+                  <MdOutlineFileDownload />
+                  <span>
+
+                  Download cv
+                  </span>
+                  </a>
           </div>
         </div>
       </div>

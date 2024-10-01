@@ -1,6 +1,7 @@
 :root {
-  --theme: #66BB6A;
-  --bg1: #181622;
+  /* --theme: #66BB6A; */
+  --theme:#009e66;
+  /* --bg1: #181622; */
   --bg: #03254E;
   --white: #fff;
   --dark: #0d0d0d;
@@ -25,6 +26,12 @@
   --Dark:#002B36 ;
   --color:#29a587;
 
+  --header:#000000;
+  --bg1: #070707;
+  --bg2:#161616;
+  --bg3:#101010;
+  --card:#212121;
+
 }
 
 * {
@@ -36,7 +43,13 @@
 
 body {
   font-family: sans-serif;
-  color: white;
+  color: #555;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 28px;
+
 }
 
 
@@ -75,4 +88,28 @@ body {
   background-color: var(--theme);
   color: var(--dark);
   transition: .5s;
+}
+
+.download_cv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 250px;
+  text-decoration: none !important;;
+  
+  background: #009e66;
+  color: #fff;
+  padding: 15px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: .5s;
+  border: 1px solid #009e66;
+  font-family: 'Montserrat', sans-serif;
+}
+ul{
+  list-style: None;
+}
+a{
+  text-decoration: none;
 }

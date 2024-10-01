@@ -1,0 +1,112 @@
+#Banner {
+    background-color: var(--bg3);
+    /* background-image: url("../../assets/wave4.svg"); */
+    // background: url("../../assets/me1.png");
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: var(--h);
+    width: 100%;
+    color: white;
+    padding-top: 60px;
+
+    .banner-container {
+        height: 100%;
+        width: 85%;
+        margin: 0px auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .banner-left {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .banner-left-content {
+                .banner-title {
+                    margin-bottom: 15px;
+
+                    h1 {
+                        font-size: 100px;
+                        font-weight: 600;
+                        font-family: 'Montserrat', sans-serif;
+                        color: #ffffff;
+                        text-transform: capitalize;
+                        margin: 0 0 2px;
+
+                        span {
+                            color: #009E66;
+                            font-family: sans-serif;
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 50px;
+                        font-size: 40px;
+                        color: #fff;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        font-family: 'Montserrat', sans-serif;
+                        position: relative;
+                    }
+                }
+
+                .banner_btns {
+                    margin-top: 20px;
+                    .download_cv {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 10px;
+                        width: 250px;
+                        text-decoration: none !important;;
+                        
+                        background: #009e66;
+                        color: #fff;
+                        padding: 15px 40px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        transition: .5s;
+                        border: 1px solid #009e66;
+                        font-family: 'Montserrat', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.banner-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // .banner-right-img {
+    //     // box-shadow: var(--theme) 3px 0px 10px 2px;
+    //     // border-radius: 50%;
+
+    //     img {
+    //         width: 400px;
+    //         height: 400px;
+    //         object-fit: cover;
+    //         border-radius: 50%;
+    //     }
+    // }
+
+    .banner-right-img {
+        // width: 500px;
+
+        img {
+            width: 500px;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+}

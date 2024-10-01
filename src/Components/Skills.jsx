@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles/Skills.css"
+import { motion } from 'framer-motion';
 
 // frontend
 import css from '../assets/icons8-css3-96.png'
@@ -24,14 +25,20 @@ import k8s from '../assets/icons8-kubernetes-96.png';
 import Github from '../assets/icons8-github-50.png'
 import gitlab from '../assets/icons8-gitlab-144.png';
 
-const Cards= ({img,name})=>(
+const Cards = ({ img, name ,transition }) => (
   <div className='skills-cards'>
-    <div className="skills-card-img">
-      <img src={img} alt={name} />
-    </div>
-    <div className="skills-card-content">
-      <h4>{name}</h4>
-    </div>
+    <motion.dev
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={transition}
+    >
+      <div className="skills-card-img">
+        <img src={img} alt={name} />
+      </div>
+      <div className="skills-card-content">
+        <h4>{name}</h4>
+      </div>
+    </motion.dev>
   </div>
 )
 
@@ -41,30 +48,30 @@ export default function Skills() {
       <div className="skill-container">
         <div className="skill-content">
           <div className="skill-title">
-            <h1>MySkills</h1>
-    
+            <h1>My Skills</h1>
+
           </div>
           <div className="skill-all">
             {/* backend */}
-            <Cards img={django} name={"django"} />
-            <Cards img={nodejs} name={"nodejs"} />
-            <Cards img={python} name={"python"} />
-            <Cards img={php} name={"PHP"} />
+            <Cards  img={django} name={"django"} transition={{ duration: 1.1, ease: 'easeInOut' }} />
+            <Cards img={nodejs} name={"nodejs"} transition={{ duration: 1.2, ease: 'easeInOut' }} />
+            <Cards img={python} name={"python"} transition={{ duration: 1.3, ease: 'easeInOut' }} />
+            <Cards img={php} name={"PHP"} transition={{ duration: 1.4, ease: 'easeInOut' }} />
             {/* frontend */}
-            <Cards img={js} name={"Javascript"} />
-            <Cards img={css} name={"Css"} />
-            <Cards img={html} name={"html"} />
-            <Cards img={react} name={"react"} />
+            <Cards img={js} name={"Javascript"} transition={{ duration: 1.5, ease: 'easeInOut' }} />
+            <Cards img={css} name={"Css"} transition={{ duration: 1.6, ease: 'easeInOut' }} />
+            <Cards img={html} name={"html"} transition={{ duration: 1.7, ease: 'easeInOut' }} />
+            <Cards img={react} name={"react"} transition={{ duration: 1.8, ease: 'easeInOut' }} />
             {/* base de donne */}
-            <Cards img={mongodb} name={"mongodb"} />
-            <Cards img={postgres} name={"postgres"} />
-            <Cards img={mysql} name={"mysql"} />
-            <Cards img={docker} name={"docker"} />
+            <Cards img={mongodb} name={"mongodb"} transition={{ duration: 1.9, ease: 'easeInOut' }} />
+            <Cards img={postgres} name={"postgres"} transition={{ duration: 1.7, ease: 'easeInOut' }} />
+            <Cards img={mysql} name={"mysql"} transition={{ duration: 1.7, ease: 'easeInOut' }} />
+            <Cards img={docker} name={"docker"} transition={{ duration: 1.1, ease: 'easeInOut' }} />
             {/*  */}
-            <Cards img={git} name={"git"} />
-            <Cards img={Github} name={"Github"} />
-            <Cards img={gitlab} name={"gitlab"} />
-            <Cards img={k8s} name={"k8s"} />
+            <Cards img={git} name={"git"} transition={{ duration: 1.2, ease: 'easeInOut' }} />
+            <Cards img={Github} name={"Github"} transition={{ duration: 1.3, ease: 'easeInOut' }} />
+            <Cards img={gitlab} name={"gitlab"} transition={{ duration: 1.4, ease: 'easeInOut' }} />
+            <Cards img={k8s} name={"k8s"} transition={{ duration: 1.5, ease: 'easeInOut' }} />
             {/* <Cards img={ansible} name={"ansible"} /> */}
           </div>
 
