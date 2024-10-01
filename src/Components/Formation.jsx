@@ -1,5 +1,5 @@
 import React from 'react'
-import "./styles/Formation.css"
+import "./styles/Formation.scss"
 import lodphin from "../assets/Shooting studio  (9).jpg"
 // import { motion } from "framer-motion";
 
