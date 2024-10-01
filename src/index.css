@@ -1,6 +1,7 @@
 :root {
   --theme: #66BB6A;
-  /* --theme: yellow; */
+  --bg1: #181622;
+  --bg: #03254E;
   --white: #fff;
   --dark: #0d0d0d;
   --grey: #424242;
@@ -47,7 +48,7 @@ body {
 
 .hire_me {
   border: 3px solid var(--theme);
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: var(--theme);
   transition: .5s;
 }
@@ -56,14 +57,14 @@ body {
   border-radius: 10px;
   border: 3px solid var(--theme);
   background-color: var(--dark);
-  color: var(--theme);
+  color: white;
 }
 
 .download {
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border: 3px solid var(--theme);
   background-color: var(--dark);
-  color: var(--theme);
+  color: white;
   transition: .5s;
 
 }

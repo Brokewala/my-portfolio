@@ -37,9 +37,20 @@ export default function Banner() {
           </div>
         </div>
         <div className="banner-right">
-          <div className="banner-right-img">
-            <img src={lod} alt="lodphin" />
-          </div>
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
+            <div className="banner-right-img">
+              <img src={lod} alt="lodphin" />
+            </div>
+          </motion.div>
         </div>
       </div>
     </div>

@@ -62,12 +62,17 @@
     /* padding: 5px 6px; */
 }
 .header-right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-.header-right img{
+
+    background-color: white;
+    border-radius: 50%;
     width: 40px;
     height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.header-right img{
     object-fit: cover;
 }

@@ -1,9 +1,7 @@
 #Project{
     height: var(--h);
     width: 100%;
-    /* background-color: var(--secondary1); */
-    /* background-color: #011C27; */
-    background-color: #181622; /* La couleur de fond par défaut */
+    background-color: var(--bg); 
     background-image: url("../../assets/wave4.svg"); /* L'image de fond */
     background-position: center; /* Positionne l'image au centre */
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la bannière */
@@ -12,7 +10,7 @@
 .project-container{
     width: 85%;
     margin: 0px auto;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 .project-tilte{
     padding-bottom: 50px ;

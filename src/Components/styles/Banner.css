@@ -1,5 +1,5 @@
 #Banner {
-    background-color: #181622; /* La couleur de fond par défaut */
+    background-color: var(--bg); 
     background-image: url("../../assets/wave4.svg"); /* L'image de fond */
     background-position: center; /* Positionne l'image au centre */
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la bannière */

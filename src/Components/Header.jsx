@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "./styles/Header.css"
 import Github from '../assets/icons8-github-50.png'
-import Linkedin from '../assets/icons8-linkedin-96.png'
-import Fb from '../assets/icons8-github-50.png'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -45,12 +43,6 @@ export default function Header() {
           <div className="header-right">
             <a href="#">
               <img src={Github} alt="github" />
-            </a>
-            <a href="#">
-              <img src={Linkedin} alt="github" />
-            </a>
-            <a href="#">
-              <img src={Fb} alt="github" />
             </a>
           </div>
         </div>

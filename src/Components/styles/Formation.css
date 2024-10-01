@@ -1,16 +1,12 @@
 #Formation{
     height: var(--h);
     width: 100%;
-    background-color: #181622; /* La couleur de fond par défaut */
+    background-color: var(--bg); 
     background-image: url("../../assets/wave4.svg"); /* L'image de fond */
     background-position: center; /* Positionne l'image au centre */
     background-size: cover; /* Ajuste la taille de l'image pour couvrir toute la bannière */
     background-repeat: no-repeat;
-    /* background-color:#011C27; */
-    /* background: url("../../assets/Circuit Primary.svg") center/cover no-repeat ; */
-    /* background: linear-gradient(to right, var(--theme) 20%, var(--Dark) 20%); */
-    /* background: linear-gradient(to right, var(--theme) 20%, transparent 20%), url('../../assets/Circuit Primary.svg'); */
-    background-size: cover;
+   background-size: cover;
     
 }
 .Formation-container{

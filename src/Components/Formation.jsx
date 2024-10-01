@@ -1,6 +1,8 @@
 import React from 'react'
 import "./styles/Formation.css"
 import lodphin from "../assets/Shooting studio  (9).jpg"
+// import { motion } from "framer-motion";
+
 
 const FormaValue = ({ years, title, paragraph }) => (
   <div className="Formation-cards">
@@ -21,7 +23,8 @@ export default function Formation() {
     <div id='Formation'>
       <div className="Formation-container">
         <div className="Formation-right">
-          <img src={lodphin} alt="lodphin" />
+        
+            <img src={lodphin} alt="lodphin" />
         </div>
         <div className="Formation-left">
           <div className="Formation-title">
