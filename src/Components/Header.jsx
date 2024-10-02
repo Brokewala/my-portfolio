@@ -29,9 +29,9 @@ export default function Header() {
   }, []);
 
   return (
-    <div id='Header'>
+    <div id='Header' className={scrolled && scrollValue}>
       <div className="header-container">
-        <div id="header-content" className={scrolled ? 'header '+scrollValue : 'header'}>
+        <div id="header-content" className={ 'header '}>
           <div className="header-left">
             <a className='link' href="#Home">Home</a>
             <a className='link' href="#Aboute">About</a>
@@ -41,9 +41,9 @@ export default function Header() {
             <a className='link' href="#Contact">Contact</a>
           </div>
           <div className="header-right">
-            <a href="#">
+            {/* <a href="#">
               <img src={Github} alt="github" />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

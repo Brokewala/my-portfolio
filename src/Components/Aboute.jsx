@@ -1,16 +1,29 @@
-import React from 'react'
+
 import "./styles/Aboute.scss"
 import myimg from "../assets/Shooting studio  (8).jpg"
 import { MdOutlineFileDownload } from "react-icons/md";
+import { motion } from "framer-motion"
 
 export default function Aboute() {
   return (
     <div id='Aboute'>
       <div className="about-content">
         <div className="about-left">
+        <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: 0.5,
+              ease: [0, 0.71, 0.2, 1.01]
+            }}
+          >
+
           <div className="about-img">
             <img src={myimg} alt="my img" />
           </div>
+          </motion.div>
         </div>
         <div className="about-right">
           <div className="about_title">

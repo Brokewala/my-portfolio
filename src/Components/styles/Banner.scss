@@ -1,8 +1,5 @@
 #Banner {
     background-color: var(--bg3);
-    /* background-image: url("../../assets/wave4.svg"); */
-    // background: url("../../assets/me1.png");
-
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -61,8 +58,7 @@
                         justify-content: center;
                         gap: 10px;
                         width: 250px;
-                        text-decoration: none !important;;
-                        
+                        text-decoration: none !important;
                         background: #009e66;
                         color: #fff;
                         padding: 15px 40px;
@@ -75,38 +71,129 @@
                 }
             }
         }
+        
+        .banner-right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .banner-right-img {
+                img {
+                    width: 500px;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
     }
-}
 
+    // Media queries pour la version responsive
 
+    @media only screen and (max-width: 1200px) {
+        .banner-container {
+            width: 90%;
 
+            .banner-left .banner-left-content .banner-title h1 {
+                font-size: 80px;
+            }
 
+            .banner-left .banner-left-content .banner-title h3 {
+                font-size: 35px;
+            }
 
-.banner-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+            .banner-right .banner-right-img img {
+                width: 400px;
+            }
+        }
+    }
 
-    // .banner-right-img {
-    //     // box-shadow: var(--theme) 3px 0px 10px 2px;
-    //     // border-radius: 50%;
+    @media only screen and (max-width: 992px) {
+        .banner-container {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+            margin-top: 50px;
 
-    //     img {
-    //         width: 400px;
-    //         height: 400px;
-    //         object-fit: cover;
-    //         border-radius: 50%;
-    //     }
-    // }
+            .banner-left {
+                margin-bottom: 30px;
 
-    .banner-right-img {
-        // width: 500px;
+                .banner-left-content {
+                    .banner-title h1 {
+                        font-size: 60px;
+                    }
 
-        img {
-            width: 500px;
-            height: 100%;
-            object-fit: cover;
+                    .banner-title h3 {
+                        font-size: 30px;
+                    }
+                    .banner_btns{
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .download_cv {
+                           width: 200px;
+                           padding: 10px 30px;
+                       }
+                    }
+                }
+            }
 
+            .banner-right .banner-right-img  {
+                width: 300px;
+                height: 300px;
+                background: url("../../assets/Shooting\ studio\ \ \(9\).jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                border: 6px solid var(--theme);
+
+                img{
+                    display: none;
+                    // width: 350px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .banner-container {
+            width: 100%;
+
+            .banner-left .banner-left-content .banner-title h1 {
+                font-size: 50px;
+            }
+
+            .banner-left .banner-left-content .banner-title h3 {
+                font-size: 25px;
+            }
+
+            .banner-right .banner-right-img img {
+                width: 300px;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 576px) {
+        height: auto;
+
+        .banner-container {
+            .banner-left .banner-left-content .banner-title h1 {
+                font-size: 40px;
+            }
+
+            .banner-left .banner-left-content .banner-title h3 {
+                font-size: 20px;
+            }
+
+            .banner_btns .download_cv {
+                width: 180px;
+                padding: 8px 20px;
+            }
+
+            .banner-right .banner-right-img img {
+                width: 250px;
+            }
         }
     }
 }
