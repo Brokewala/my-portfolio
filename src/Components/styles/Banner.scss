@@ -78,9 +78,11 @@
             justify-content: center;
 
             .banner-right-img {
+                position: relative;
                 img {
+                    position: relative;
                     width: 500px;
-                    height: 100%;
+                    height: 600px;
                     object-fit: cover;
                 }
             }
