@@ -11,8 +11,8 @@ export default function Banner() {
           <div className="banner-left-content">
             <div className="banner-title">
               <motion.div
-                initial={{y: '-20vh', opacity: 0 }}
-                whileInView={{ y:0, opacity: 1 }}
+                initial={{ y: '-20vh', opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, ease: 'easeInOut' }}
 
               >
@@ -22,8 +22,8 @@ export default function Banner() {
 
               </motion.div>
               <motion.div
-                initial={{ y: '-20vh',  opacity: 0 }}
-                whileInView={{ y:0, opacity: 1 }}
+                initial={{ y: '-20vh', opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.9, ease: 'easeInOut' }}
 
               >
@@ -33,20 +33,19 @@ export default function Banner() {
               </motion.div>
             </div>
             <motion.div
-              initial={{x: '-20vw', opacity: 0 }}
-              whileInView={{x: 0,  opacity: 1 }}
+              initial={{ x: '-20vw', opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.7, ease: 'easeInOut' }}
 
             >
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur aut, debitis nemo iste a esse velit ad, praesentium dolores provident porro reiciendis recusandae fugit. Eos sed facilis illum delectus itaque!
-              </p>
+                Professional, dynamic, and creative full-stack web developer with a focus on delivering scalable and robust solutions. Experienced in leading projects and managing infrastructure and deployment processes.              </p>
             </motion.div>
 
             <div className="banner_btns">
               <motion.div
                 initial={{ x: '-20vw', opacity: 0 }}
-                whileInView={{x: 0, opacity: 1 }}
+                whileInView={{ x: 0, opacity: 1 }}
                 whileHover={{ scale: 1.1 }}
                 transition={{ type: 'spring', stiffness: 100 }}
 
