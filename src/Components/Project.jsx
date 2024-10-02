@@ -5,14 +5,14 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import { motion, useScroll } from "framer-motion"
-import project1 from "../assets/project1.png"
-import project2 from "../assets/project2.png"
-import project3 from "../assets/project3.png"
-import project4 from "../assets/project4.png"
-import project5 from "../assets/project5.png"
-import project6 from "../assets/project6.png"
-import project7 from "../assets/project7.png"
-import project8 from "../assets/project8.png"
+import project1 from "../assets/projet1.png"
+import project2 from "../assets/projet2.png"
+import project3 from "../assets/projet3.png"
+import project4 from "../assets/projet4.png"
+import project5 from "../assets/projet5.png"
+import project6 from "../assets/projet6.png"
+import project7 from "../assets/projet7.png"
+import project8 from "../assets/projet8.png"
 
 
 export default function Project() {
