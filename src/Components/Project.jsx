@@ -7,12 +7,12 @@ import "swiper/css/navigation";
 // import { motion, useScroll } from "framer-motion"
 import project1 from "../assets/projet1.png"
 import project2 from "../assets/projet2.png"
-import project3 from "../assets/projet3.png"
 import project4 from "../assets/projet4.png"
 import project5 from "../assets/projet5.png"
 import project6 from "../assets/projet6.png"
 import project7 from "../assets/projet7.png"
 import project8 from "../assets/projet8.png"
+import iamges from "..//assets/icons8-droite-24.png"
 
 
 export default function Project() {
@@ -66,7 +66,7 @@ export default function Project() {
                   </p>
                   <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -78,32 +78,13 @@ export default function Project() {
                   <img src={project2} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>Steedy platforme</h4>
                   <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id accusamus perferendis nemo. Blanditiis minima, iste voluptatem aliquam, iure sunt ducimus tenetur repellat saepe similique possimus, delectus aliquid amet quam mollitia.
                   </p>
-                  <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
+                  <a href={"https://steedy.app/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
-                  </a>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            {/* slide3 */}
-            <SwiperSlide >
-              <div className='project-cards'>
-                <div className="project-card-img">
-                  <img src={project3} alt="project1" />
-                </div>
-                <div className="project-card-content">
-                  <h4>zafy tody</h4>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
-                  </p>
-                  <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
-                    <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -116,13 +97,13 @@ export default function Project() {
                   <img src={project4} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>Zafytody Online</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
                   </p>
-                  <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
+                  <a href={"https://zafytody.online/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -135,13 +116,13 @@ export default function Project() {
                   <img src={project5} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>MaBoo</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
                   </p>
-                  <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
+                  <a href={"https://maboo.mg/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -154,13 +135,13 @@ export default function Project() {
                   <img src={project6} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>Zara SR</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
                   </p>
                   <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -172,13 +153,13 @@ export default function Project() {
                   <img src={project7} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>MadActoria</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
                   </p>
                   <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
@@ -190,13 +171,13 @@ export default function Project() {
                   <img src={project8} alt="project1" />
                 </div>
                 <div className="project-card-content">
-                  <h4>zafy tody</h4>
+                  <h4>jeux bulle</h4>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates obcaecati sint qui, pariatur necessitatibus atque ipsa, accusamus nam quis labore rerum modi quo sapiente accusantium earum nemo dolore rem tenetur.
                   </p>
                   <a href={"https://lodphin24.netlify.app/"} target='__blanks' >
                     <button>Discover</button>
-                    <img src="/src/assets/icons8-droite-24.png" alt="image" />
+                    <img src={iamges} alt="image" />
                   </a>
                 </div>
               </div>
